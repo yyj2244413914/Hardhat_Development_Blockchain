@@ -217,9 +217,9 @@ ReceivableToken deployed to: 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
 
 ## 九、说明
 
-本次进阶实验完成的是“**脚本化复现**”：把四次课堂实验改写成脚本，用一条命令跑通，并得到与 Remix 手工操作一致的结果。
+本次进阶实验**以实验一（简易银行合约）为对象**完成了“脚本化复现”：把 Remix 中的部署、存款、取款、超额拦截等操作改写成 `scripts/exp1.js`，用一条命令跑通，并得到与手工操作完全一致的结果。
 
-常驻本地节点（`npx hardhat node`）与自动化测试（`npx hardhat test`）属于同一环境的延伸，仓库中保留了 `scripts/deploy.js` 与 `test/lab.test.js`，可直接用于后续扩展。
+仓库同时提供了实验二至实验四的脚本（`exp2.js`、`exp3.js`、`exp4.js`）与一键运行的 `runAll.js`，结构相同，属于同一套环境的扩展内容；常驻本地节点（`npx hardhat node`）与自动化测试（`npx hardhat test`）同理，保留了 `scripts/deploy.js` 与 `test/lab.test.js`。
 
 ---
 
